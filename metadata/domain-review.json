@@ -1,0 +1,73 @@
+{
+  "repo": "prism-ops-backup-map",
+  "language": "JavaScript",
+  "category": "Automation",
+  "goal": "Develop a JavaScript command-oriented project for backup scenarios with windowed input fixtures, late-data behavior checks, and fixture-scale datasets.",
+  "review_model": {
+    "terms": [
+      "dry-run spread",
+      "rename risk",
+      "operator cost",
+      "idempotence"
+    ],
+    "lanes": [
+      "ship",
+      "watch",
+      "hold"
+    ],
+    "score": "signal * 2 + slack + confidence - drag * 3",
+    "purpose": "surface the domain-specific cases that need the most careful review"
+  },
+  "cases": [
+    {
+      "name": "baseline",
+      "focus": "dry-run spread",
+      "signal": 48,
+      "slack": 49,
+      "drag": 25,
+      "confidence": 71,
+      "score": 141,
+      "lane": "ship"
+    },
+    {
+      "name": "stress",
+      "focus": "rename risk",
+      "signal": 74,
+      "slack": 28,
+      "drag": 11,
+      "confidence": 89,
+      "score": 232,
+      "lane": "ship"
+    },
+    {
+      "name": "edge",
+      "focus": "operator cost",
+      "signal": 65,
+      "slack": 46,
+      "drag": 31,
+      "confidence": 68,
+      "score": 151,
+      "lane": "ship"
+    },
+    {
+      "name": "recovery",
+      "focus": "idempotence",
+      "signal": 51,
+      "slack": 23,
+      "drag": 11,
+      "confidence": 75,
+      "score": 167,
+      "lane": "ship"
+    },
+    {
+      "name": "stale",
+      "focus": "dry-run spread",
+      "signal": 62,
+      "slack": 50,
+      "drag": 15,
+      "confidence": 52,
+      "score": 181,
+      "lane": "ship"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+name,focus,signal,slack,drag,confidence,score,lane
+baseline,dry-run spread,48,49,25,71,141,ship
+stress,rename risk,74,28,11,89,232,ship
+edge,operator cost,65,46,31,68,151,ship
+recovery,idempotence,51,23,11,75,167,ship
+stale,dry-run spread,62,50,15,52,181,ship
